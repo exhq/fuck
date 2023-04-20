@@ -10,7 +10,7 @@ def config(key):
         config_data = json.load(f)
         return config_data.get(key, None)
 
-lmao = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890/+"
+lmao = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789/+"
 
 def check(x: str):
     if len(x) > 10:
