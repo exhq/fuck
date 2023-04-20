@@ -13,7 +13,10 @@ def config(key):
 lmao = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890/+"
 
 def check(x: str):
-    return all(i in lmao for i in x)
+    if len(x) > 10:
+        return False
+    else:
+        return all(i in lmao for i in x)
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
